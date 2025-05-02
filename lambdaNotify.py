@@ -41,13 +41,17 @@ def create_summary(success, failure, date):
            summary = summary + "- " + file + "\n"
    else:
        summary += "None\n"
-   summary += "\nFailure Files (" + str(len(failure)) + "):\n"
+   summary += ("\n"
+               "Failure Files (") + str(len(failure)) + "):\n"
    if failure:
        for file in failure:
            summary = summary + "- " + file + "\n"
    else:
        summary += "None"
    return summary
+# file
+# sucess fie 6
+#brm gt
 def send_email(message):
    sns.publish(
        TopicArn=SNS_TOPIC_ARN,
