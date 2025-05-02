@@ -40,7 +40,7 @@ def create_summary(success, failure, date):
        for file in success:
            summary = summary + "- " + file + "\n"
    else:
-       summary += "None\n"
+       summary = summary + "None\n"
    summary += ("\n"
                "Failure Files (") + str(len(failure)) + "):\n"
    if failure:
