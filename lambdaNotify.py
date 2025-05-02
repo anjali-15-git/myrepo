@@ -47,7 +47,7 @@ def create_summary(success, failure, date):
        for file in failure:
            summary = summary + "- " + file + "\n"
    else:
-       summary += "None"
+       summary = summary + "None"
    return summary
 def send_email(message):
    sns.publish(
