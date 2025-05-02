@@ -49,9 +49,6 @@ def create_summary(success, failure, date):
    else:
        summary += "None"
    return summary
-# file
-# sucess fie 6
-#brm gt
 def send_email(message):
    sns.publish(
        TopicArn=SNS_TOPIC_ARN,
